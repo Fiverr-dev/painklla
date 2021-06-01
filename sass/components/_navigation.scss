@@ -1,10 +1,17 @@
 @use "../base/palette";
 
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
 .navbar {
     position: relative;
 
-    height: 100px;
+    height: 120px;
     padding-top: 30px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,4 +85,9 @@
     .logo__image {
         width: 280px;
     }
+}
+
+.test {
+    height: 2000px;
+    background-color: blue;
 }

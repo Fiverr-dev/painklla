@@ -17,9 +17,15 @@ body {
   padding: 0 30px;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
 .navbar {
   position: relative;
-  height: 100px;
+  height: 120px;
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -37,7 +43,7 @@ body {
   justify-content: center;
   padding: 0 10px;
   border-radius: 6px;
-  color: #0e0e0f;
+  color: #444444;
   font-weight: 600;
   font-size: 1rem;
   transition: 0.1s ease-in-out;
@@ -72,7 +78,7 @@ body {
   width: 100%;
   border-bottom: 2px;
   height: 2px;
-  background-color: #8a8a92;
+  background-color: #c4c4c4;
 }
 
 @media (max-width: 1020px) {
@@ -89,4 +95,8 @@ body {
   .logo__image {
     width: 280px;
   }
+}
+.test {
+  height: 2000px;
+  background-color: blue;
 }
