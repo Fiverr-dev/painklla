@@ -8,6 +8,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: #444444;
 }
 
 .container {
@@ -20,7 +21,8 @@ body {
 .sticky {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: white;
+  z-index: 999;
 }
 
 .navbar {
@@ -95,4 +97,39 @@ body {
   .logo__image {
     width: 280px;
   }
+}
+.hero {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero__bg {
+  background: radial-gradient(99% 99% at 100% 2.67%, #deedff 0.02%, rgba(222, 237, 255, 0) 79.51%);
+  width: 80vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: -2;
+}
+.hero__subtext {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2;
+}
+.hero__image {
+  width: 100%;
+  object-fit: cover;
+  max-width: 500px;
+}
+.hero__highlight {
+  font-weight: 800;
 }
