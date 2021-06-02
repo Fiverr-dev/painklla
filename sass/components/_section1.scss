@@ -1,12 +1,12 @@
 @use "../base/palette";
+@use "../base/mixins";
 
 .what {
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    @include mixins.gap;
 
     &__title {
         font-size: 1.5rem;

@@ -1,15 +1,11 @@
 @use '../base/palette';
-
-@mixin gap {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+@use '../base/mixins';
 
 .explain {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include gap;
+    @include mixins.gap;
 
     &__title {
         text-align: center;

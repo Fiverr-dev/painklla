@@ -1,0 +1,60 @@
+@use "../base/palette";
+@use "../base/mixins";
+
+.pain {
+    @include mixins.gap;
+    background: palette.$linear;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__types {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__box {
+        background-color: #eef5ff;
+        display: flex;
+        border-radius: 100px;
+        align-items: center;
+        padding: 15px 30px;
+        margin-bottom: 30px;
+
+        p {
+            color: palette.$black;
+            font-weight: 400;
+        }
+    }
+}
+
+.pain__box + .pain__box {
+    margin-left: 20px;
+}
+
+.row-1,
+.row-4 {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+.row-2,
+.row-3 {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+}
+
+.sad {
+    margin-right: 20px;
+}
