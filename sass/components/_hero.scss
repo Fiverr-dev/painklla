@@ -7,6 +7,11 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    height: 80vh;
+
+    &__content {
+        z-index: 999;
+    }
 
     &__title {
         font-size: 2rem;
@@ -37,10 +42,28 @@
     &__image {
         width: 100%;
         object-fit: cover;
-        max-width: 500px;
+        max-width: 600px;
+        z-index: 1;
     }
 
     &__highlight {
         font-weight: 800;
+    }
+}
+
+@media (min-width: 1020px) {
+    .hero {
+        &__image {
+            margin-top: -165px;
+            max-width: 800px;
+        }
+
+        &__title {
+            font-size: 3rem;
+        }
+
+        &__subtext {
+            font-size: 1.25rem;
+        }
     }
 }

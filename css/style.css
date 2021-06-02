@@ -105,6 +105,10 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
+  height: 80vh;
+}
+.hero__content {
+  z-index: 999;
 }
 .hero__title {
   font-size: 2rem;
@@ -128,8 +132,22 @@ body {
 .hero__image {
   width: 100%;
   object-fit: cover;
-  max-width: 500px;
+  max-width: 600px;
+  z-index: 1;
 }
 .hero__highlight {
   font-weight: 800;
+}
+
+@media (min-width: 1020px) {
+  .hero__image {
+    margin-top: -165px;
+    max-width: 800px;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__subtext {
+    font-size: 1.25rem;
+  }
 }
