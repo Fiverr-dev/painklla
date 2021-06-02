@@ -186,7 +186,6 @@ body {
   margin-bottom: 60px;
   background: linear-gradient(250.86deg, #f8fcff -4.57%, rgba(221, 236, 255, 0.2) 102.79%);
   padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -201,18 +200,56 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .pain__box {
   background-color: #eef5ff;
   display: flex;
   border-radius: 100px;
   align-items: center;
-  padding: 15px 30px;
-  margin-bottom: 30px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
 }
 .pain__box p {
   color: #444444;
   font-weight: 400;
+}
+.pain__buttons {
+  margin-bottom: 50px;
+}
+.pain__buttons .grouped {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.pain__buttons .grouped__btn {
+  background-color: #53a0ff;
+  padding: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+  width: 100%;
+  font-weight: 600;
+}
+.pain__buttons .grouped__text {
+  color: #53a0ff;
+  font-weight: 600;
+}
+.pain__buttons .single {
+  border: 1px solid #53a0ff;
+  padding: 12px;
+  border-radius: 2100px;
+  text-align: center;
+  font-weight: 600;
+  color: #444444;
+}
+.pain__image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .pain__box + .pain__box {

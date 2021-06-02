@@ -5,7 +5,6 @@
     @include mixins.gap;
     background: palette.$linear;
     padding-top: 40px;
-    padding-bottom: 40px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -21,6 +20,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 40px;
     }
 
     &__box {
@@ -28,13 +28,54 @@
         display: flex;
         border-radius: 100px;
         align-items: center;
-        padding: 15px 30px;
-        margin-bottom: 30px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
 
         p {
             color: palette.$black;
             font-weight: 400;
         }
+    }
+
+    &__buttons {
+        margin-bottom: 50px;
+        .grouped {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+
+            &__btn {
+                background-color: palette.$accent;
+                padding: 20px;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                margin-bottom: 10px;
+                width: 100%;
+                font-weight: 600;
+            }
+
+            &__text {
+                color: palette.$accent;
+                font-weight: 600;
+            }
+        }
+
+        .single {
+            border: 1px solid palette.$accent;
+            padding: 12px;
+            border-radius: 2100px;
+            text-align: center;
+            font-weight: 600;
+            color: palette.$black;
+        }
+    }
+    &__image {
+        width: 100%;
+        object-fit: cover;
     }
 }
 
