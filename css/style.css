@@ -321,3 +321,43 @@ body {
   right: -20px;
   bottom: -10px;
 }
+
+.how-title {
+  background-color: #53a0ff;
+  padding: 30px;
+  color: #fff;
+}
+.how-title__text {
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.how {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 10px solid #53a0ff;
+  padding-bottom: 40px;
+}
+.how__block {
+  margin-bottom: 60px;
+}
+.how__image1 {
+  display: none;
+}
+.how__icon {
+  width: 45px;
+  margin-bottom: 20px;
+}
+.how__text {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.block__title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}

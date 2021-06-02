@@ -1,0 +1,49 @@
+@use "../base/palette";
+@use "../base/mixins";
+
+//title
+.how-title {
+    background-color: palette.$accent;
+    padding: 30px;
+    color: #fff;
+
+    &__text {
+        margin-right: auto;
+        margin-left: auto;
+        width: fit-content;
+    }
+}
+
+// HOW
+
+.how {
+    @include mixins.gap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 10px solid palette.$accent;
+    padding-bottom: 40px;
+
+    &__block {
+        margin-bottom: 60px;
+    }
+
+    &__image1 {
+        display: none;
+    }
+
+    &__icon {
+        width: 45px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+}
+
+.block__title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
