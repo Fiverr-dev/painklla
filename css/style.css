@@ -107,7 +107,7 @@ body {
   overflow: hidden;
 }
 .hero__content {
-  z-index: 999;
+  z-index: 5;
 }
 .hero__title {
   font-size: 2rem;
