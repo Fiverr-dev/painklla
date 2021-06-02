@@ -18,6 +18,12 @@ body {
   padding: 0 30px;
 }
 
+.paragraph {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -123,11 +129,6 @@ body {
   left: 20%;
   z-index: -2;
 }
-.hero__subtext {
-  font-size: 1rem;
-  text-align: center;
-  line-height: 2;
-}
 .hero__image {
   width: 100%;
   object-fit: cover;
@@ -149,4 +150,33 @@ body {
   .hero__subtext {
     font-size: 1.25rem;
   }
+}
+.what {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.what__title {
+  font-size: 1.5rem;
+  color: #444444;
+}
+.what__icon {
+  max-width: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.explain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.explain__title {
+  text-align: center;
+  margin-bottom: 20px;
 }

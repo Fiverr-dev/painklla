@@ -1,0 +1,21 @@
+@use "../base/palette";
+
+.what {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+        font-size: 1.5rem;
+        color: palette.$black;
+    }
+
+    &__icon {
+        max-width: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
