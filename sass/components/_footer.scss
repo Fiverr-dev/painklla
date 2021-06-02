@@ -1,0 +1,61 @@
+@use "../base/palette";
+@use "../base/mixins";
+
+.footer {
+    background-color: #0e0e0f;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .white-logo {
+        width: 60%;
+    }
+
+    &__left {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 40px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        .download {
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 50x;
+            }
+        }
+    }
+}
+
+.line {
+    width: 100vh;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 20px 0;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
