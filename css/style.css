@@ -361,3 +361,58 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+.bonus {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bonus__image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+.bonus__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.bonus__title-main {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.bonus__title-top, .bonus__title-bottom {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+.bonus__title-top img, .bonus__title-bottom img {
+  margin-left: 10px;
+}
+.bonus__title__emoji {
+  width: 110px;
+}
+
+.point {
+  display: flex;
+  margin-bottom: 20px;
+}
+.point .no {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #53a0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-right: 20px;
+}

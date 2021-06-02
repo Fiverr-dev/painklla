@@ -1,0 +1,65 @@
+@use "../base/mixins";
+@use "../base/palette";
+
+.bonus {
+    @include mixins.gap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+        &-main {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            line-height: 1.5;
+
+            margin-top: 10px;
+        }
+
+        &-top,
+        &-bottom {
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 10px;
+            }
+        }
+
+        &__emoji {
+            width: 110px;
+        }
+    }
+}
+
+.point {
+    display: flex;
+    margin-bottom: 20px;
+
+    .no {
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        background-color: palette.$accent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 600;
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+}
