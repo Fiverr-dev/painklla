@@ -273,3 +273,18 @@ body {
 .sad {
   margin-right: 20px;
 }
+
+.faq__q {
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px;
+}
+.faq__sad {
+  margin-right: 20px;
+}
+.faq__text {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #444444;
+  line-height: 1.5;
+}

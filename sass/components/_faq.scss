@@ -1,0 +1,19 @@
+@use "../base/palette";
+@use "../base/mixins";
+
+.faq {
+    &__q {
+        display: flex;
+        align-items: start;
+        margin-bottom: 20px;
+    }
+    &__sad {
+        margin-right: 20px;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 1rem;
+        color: palette.$black;
+        line-height: 1.5;
+    }
+}

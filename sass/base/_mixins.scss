@@ -3,3 +3,9 @@
     margin-bottom: 60px;
     // color: red;
 }
+
+@mixin para {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2;
+}
