@@ -234,6 +234,7 @@ body {
   margin-bottom: 10px;
   width: 100%;
   font-weight: 600;
+  cursor: pointer;
 }
 .pain__buttons .grouped__text {
   color: #53a0ff;
@@ -246,6 +247,7 @@ body {
   text-align: center;
   font-weight: 600;
   color: #444444;
+  cursor: pointer;
 }
 .pain__image {
   width: 100%;
@@ -287,4 +289,35 @@ body {
   font-size: 1rem;
   color: #444444;
   line-height: 1.5;
+}
+
+.banner {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner__image {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.banner__title {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #53a0ff;
+  margin-bottom: 30px;
+}
+.banner__title::before {
+  content: url("../../Public/Images/life-up.svg");
+  position: absolute;
+  left: -40px;
+  top: -10px;
+}
+.banner__title::after {
+  content: url("../../Public/Images/life-down.svg");
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
 }
