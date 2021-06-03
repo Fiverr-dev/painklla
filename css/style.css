@@ -343,6 +343,11 @@ body {
   line-height: 1.5;
 }
 
+@media (min-width: 1020px) {
+  .faq__q {
+    max-width: 70%;
+  }
+}
 .banner {
   margin-top: 60px;
   margin-bottom: 60px;

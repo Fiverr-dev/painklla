@@ -17,3 +17,11 @@
         line-height: 1.5;
     }
 }
+
+@media (min-width: 1020px) {
+    .faq {
+        &__q {
+            max-width: 70%;
+        }
+    }
+}
