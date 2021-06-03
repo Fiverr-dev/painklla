@@ -97,14 +97,12 @@
     display: flex;
     justify-content: center;
     width: fit-content;
-    margin-right: 20px;
 }
 .row-2,
 .row-3 {
     display: flex;
     justify-content: space-around;
     width: fit-content;
-    margin-right: 20px;
 }
 
 .sad {
@@ -160,6 +158,10 @@
             width: 80%;
             max-width: min(45%, 800px);
             bottom: 0px;
+        }
+
+        .row ~ .row {
+            margin-left: 20px;
         }
     }
 }
