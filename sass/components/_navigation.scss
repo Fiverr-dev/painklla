@@ -1,4 +1,15 @@
 @use "../base/palette";
+@use "../base/mixins";
+
+.bg-overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #000;
+    opacity: 50%;
+    z-index: 500;
+    display: none;
+}
 
 .sticky {
     position: sticky;
@@ -23,8 +34,11 @@
         display: flex;
 
         &__item {
-            border: 1px solid palette.$accent;
-            height: 53px;
+            @include mixins.pc {
+                border: 1px solid palette.$accent;
+                height: 53px;
+            }
+
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -38,8 +52,10 @@
             cursor: pointer;
 
             &:hover {
-                background-color: palette.$accent;
-                color: white;
+                @include mixins.pc {
+                    background-color: palette.$accent;
+                    color: white;
+                }
             }
         }
         .offer {
@@ -50,7 +66,13 @@
 }
 
 .navlinks__item + .navlinks__item {
-    margin-left: 30px;
+    @include mixins.pc {
+        margin-left: 30px;
+    }
+
+    @include mixins.phone {
+        margin-top: 50px;
+    }
 }
 
 .logo {
@@ -96,4 +118,17 @@
     .logo__image {
         width: 200px;
     }
+}
+
+.menu-open {
+    display: flex !important;
+    position: absolute;
+    flex-direction: column;
+    top: 110%;
+    right: 10px;
+    border: none;
+    background-color: #fff;
+    padding: 50px 20px;
+    align-items: center;
+    border-radius: 10px;
 }
