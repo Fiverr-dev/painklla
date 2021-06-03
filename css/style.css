@@ -421,6 +421,7 @@ body {
 .how__icon {
   width: 45px;
   margin-bottom: 20px;
+  height: 63px;
 }
 .how__text {
   line-height: 1.5;
@@ -432,6 +433,26 @@ body {
   margin-bottom: 10px;
 }
 
+@media (min-width: 1020px) {
+  .how {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .how__block {
+    flex: 1;
+  }
+  .how__image1 {
+    display: block;
+    margin-top: 50px;
+  }
+  .how__image2 {
+    display: none;
+  }
+  .how__block + .how__block {
+    margin-left: 30px;
+  }
+}
 .bonus {
   margin-top: 60px;
   margin-bottom: 60px;
