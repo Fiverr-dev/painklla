@@ -433,6 +433,9 @@ body {
 .how__image1 {
   display: none;
 }
+.how__image2 {
+  width: 80vw;
+}
 .how__icon {
   width: 45px;
   margin-bottom: 20px;
