@@ -5,9 +5,12 @@
     @include mixins.gap;
     background: palette.$linear;
     padding-top: 40px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
     &__title {
         text-align: center;
@@ -63,13 +66,15 @@
             &__text {
                 color: palette.$accent;
                 font-weight: 600;
+                text-align: center;
             }
         }
 
         .single {
             border: 1px solid palette.$accent;
             padding: 12px;
-            border-radius: 2100px;
+            height: fit-content;
+            border-radius: 100px;
             text-align: center;
             font-weight: 600;
             color: palette.$black;
@@ -79,6 +84,7 @@
     &__image {
         width: 100%;
         object-fit: cover;
+        max-width: 600px;
     }
 }
 
@@ -91,14 +97,69 @@
     display: flex;
     justify-content: center;
     width: fit-content;
+    margin-right: 20px;
 }
 .row-2,
 .row-3 {
     display: flex;
     justify-content: space-around;
     width: fit-content;
+    margin-right: 20px;
 }
 
 .sad {
     margin-right: 20px;
+}
+
+@media (min-width: 1000px) {
+    .pain {
+        overflow: hidden;
+        &__inner {
+            position: relative;
+        }
+        &__content {
+            max-width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            text-align: left;
+            width: 80%;
+        }
+
+        &__types {
+            justify-content: start;
+        }
+
+        &__buttons {
+            width: min(90%, 600px);
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 0;
+            justify-content: space-between;
+
+            .single {
+                // flex: 1;
+                width: 55%;
+                padding: 15px;
+            }
+
+            .grouped {
+                // flex: 1;
+                width: 40%;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__image {
+            position: absolute;
+            object-fit: cover;
+            right: -5vw;
+            width: 80%;
+            max-width: min(45%, 800px);
+            bottom: 0px;
+        }
+    }
 }
