@@ -634,7 +634,7 @@ body {
   width: max(80%, 100px);
 }
 .footer__right .download + .download {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .line {
