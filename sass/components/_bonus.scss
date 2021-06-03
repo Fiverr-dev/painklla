@@ -9,6 +9,7 @@
 
     &__image {
         width: 100%;
+        max-width: 600px;
         object-fit: cover;
         margin-bottom: 50px;
     }
@@ -48,6 +49,8 @@
 .point {
     display: flex;
     margin-bottom: 20px;
+    @include mixins.para;
+    text-align: left;
 
     .no {
         width: 32px;
@@ -71,5 +74,27 @@
     .single {
         width: 45%;
         padding: 10px;
+    }
+}
+
+//BONUS BUTTONS
+
+@media (min-width: 1020px) {
+    .bonus {
+        &--button {
+            // border: 1px solid red;
+            width: 60%;
+            margin-bottom: 40px;
+
+            .duo {
+                // border: 1px solid blue;
+                width: 50%;
+                height: fit-content;
+
+                .single {
+                    padding: 20px;
+                }
+            }
+        }
     }
 }

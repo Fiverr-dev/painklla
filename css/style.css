@@ -462,6 +462,7 @@ body {
 }
 .bonus__image {
   width: 100%;
+  max-width: 600px;
   object-fit: cover;
   margin-bottom: 50px;
 }
@@ -493,6 +494,10 @@ body {
 .point {
   display: flex;
   margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2;
+  text-align: left;
 }
 .point .no {
   width: 32px;
@@ -517,6 +522,19 @@ body {
   padding: 10px;
 }
 
+@media (min-width: 1020px) {
+  .bonus--button {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+  .bonus--button .duo {
+    width: 50%;
+    height: fit-content;
+  }
+  .bonus--button .duo .single {
+    padding: 20px;
+  }
+}
 .footer {
   background-color: #0e0e0f;
   color: white;
