@@ -19,6 +19,8 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
+        position: relative;
+        max-width: 400px;
 
         &-main {
             text-align: center;
@@ -95,6 +97,14 @@
                     padding: 20px;
                 }
             }
+        }
+
+        &__title::before {
+            content: url("../../Public/Images/curly arrow.svg");
+            position: absolute;
+            width: 50px;
+            left: -20%;
+            top: 50%;
         }
     }
 }

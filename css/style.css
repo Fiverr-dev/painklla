@@ -366,6 +366,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .banner__image {
   width: 100%;
@@ -392,6 +393,16 @@ body {
   bottom: -10px;
 }
 
+@media (min-width: 1020px) {
+  .banner::before {
+    content: url("../../Public/Images/Circle.svg");
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -15%;
+    bottom: 50%;
+  }
+}
 .how-title {
   background-color: #53a0ff;
   padding: 30px;
@@ -471,6 +482,8 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+  position: relative;
+  max-width: 400px;
 }
 .bonus__title-main {
   text-align: center;
@@ -533,6 +546,13 @@ body {
   }
   .bonus--button .duo .single {
     padding: 20px;
+  }
+  .bonus__title::before {
+    content: url("../../Public/Images/curly arrow.svg");
+    position: absolute;
+    width: 50px;
+    left: -20%;
+    top: 50%;
   }
 }
 .footer {
