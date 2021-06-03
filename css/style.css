@@ -547,6 +547,13 @@ body {
 }
 .footer .white-logo {
   width: 60%;
+  max-width: 300px;
+}
+.footer__content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__left {
   width: 100%;
@@ -558,14 +565,15 @@ body {
 .footer__nav {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   margin-top: 40px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   cursor: pointer;
+  width: max(80%, 300px);
 }
 .footer__right {
   display: flex;
   justify-content: space-between;
+  max-width: 450px;
 }
 .footer__right .download {
   background-color: #fff;
@@ -573,16 +581,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 .footer__right .download img {
-  width: 50x;
+  width: max(80%, 100px);
+}
+.footer__right .download + .download {
+  margin-left: 30px;
 }
 
 .line {
-  width: 100vh;
+  width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.15);
-  margin: 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 .copyright {

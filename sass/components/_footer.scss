@@ -13,6 +13,14 @@
 
     .white-logo {
         width: 60%;
+        max-width: 300px;
+    }
+
+    &__content {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__left {
@@ -26,34 +34,41 @@
     &__nav {
         display: flex;
         justify-content: space-between;
-        gap: 30px;
         margin-top: 40px;
-        font-size: 1rem;
+        font-size: 0.75rem;
         cursor: pointer;
+        width: max(80%, 300px);
     }
 
     &__right {
         display: flex;
         justify-content: space-between;
+        max-width: 450px;
+
         .download {
             background-color: #fff;
             border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
+            padding: 5px 10px;
 
             img {
-                width: 50x;
+                width: max(80%, 100px);
             }
+        }
+        .download + .download {
+            margin-left: 30px;
         }
     }
 }
 
 .line {
-    width: 100vh;
+    width: 100%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.15);
-    margin: 20px 0;
+    margin: 40px 0 20px 0;
 }
 
 .copyright {
