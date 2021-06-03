@@ -52,8 +52,12 @@
 }
 
 .logo {
-    width: 350px;
+    width: 300px;
     object-fit: cover;
+
+    &__image {
+        width: 100%;
+    }
 }
 
 .mobile-icon {
