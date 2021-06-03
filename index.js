@@ -11,4 +11,24 @@ $(document).ready(function() {
         }
 
     });
+
+    var status=closed;
+
+    $(".mobile-icon").click(()=>{
+        if(status===closed){
+            $(".mobile-icon").addClass("open")
+            $(".mobile-icon").removeClass("close")
+            status=!status
+        }else{
+            $(".mobile-icon").addClass("close")
+            $(".mobile-icon").removeClass("open")
+            status=!status
+        }
+        
+        
+        
+        
+    })
+
+    
 });

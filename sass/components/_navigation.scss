@@ -63,17 +63,21 @@
 }
 
 .mobile-icon {
-    width: 24px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    background-repeat: no-repeat;
     display: none;
     cursor: pointer;
+    background-position: center;
 }
 
-.lines {
-    width: 100%;
-    border-bottom: 2px;
-    height: 2px;
-    background-color: lighten(palette.$black, 50%);
+.close {
+    background-image: url(../../Public/Images/open.png);
+}
+
+.open {
+    background-image: url(../../Public/Images/close.png);
 }
 
 @media (max-width: 1020px) {
