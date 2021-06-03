@@ -37,7 +37,12 @@
         margin-top: 40px;
         font-size: 0.75rem;
         cursor: pointer;
-        width: max(80%, 300px);
+        flex-direction: column;
+        align-items: center;
+
+        p + p {
+            margin-top: 10px;
+        }
     }
 
     &__right {
@@ -52,7 +57,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            padding: 5px 10px;
+            padding: 5px 50px;
             max-width: 170px;
 
             img {
@@ -105,8 +110,10 @@
 
         &__nav {
             font-size: 1rem;
+            flex-direction: row;
 
             p + p {
+                margin-top: 0px;
                 margin-left: 30px;
             }
         }
