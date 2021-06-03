@@ -328,6 +328,9 @@ body {
     bottom: 0px;
   }
 }
+.faq {
+  position: relative;
+}
 .faq__q {
   display: flex;
   align-items: start;
@@ -342,10 +345,19 @@ body {
   color: #444444;
   line-height: 1.5;
 }
+.faq__bg-dots {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  right: -5%;
+}
 
 @media (min-width: 1020px) {
   .faq__q {
     max-width: 70%;
+  }
+  .faq__bg-dots {
+    display: block;
   }
 }
 .banner {

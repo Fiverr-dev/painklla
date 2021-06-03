@@ -2,6 +2,7 @@
 @use "../base/mixins";
 
 .faq {
+    position: relative;
     &__q {
         display: flex;
         align-items: start;
@@ -16,12 +17,23 @@
         color: palette.$black;
         line-height: 1.5;
     }
+
+    &__bg-dots {
+        display: none;
+        position: absolute;
+        bottom: 0px;
+        right: -5%;
+    }
 }
 
 @media (min-width: 1020px) {
     .faq {
         &__q {
             max-width: 70%;
+        }
+
+        &__bg-dots {
+            display: block;
         }
     }
 }
