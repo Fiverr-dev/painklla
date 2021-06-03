@@ -12,6 +12,7 @@
         max-width: 600px;
         object-fit: cover;
         margin-bottom: 50px;
+        position: relative;
     }
 
     &__title {
@@ -29,6 +30,10 @@
             line-height: 1.5;
 
             margin-top: 10px;
+        }
+
+        &__points {
+            position: relative;
         }
 
         &-top,
@@ -87,6 +92,7 @@
             // border: 1px solid red;
             width: 60%;
             margin-bottom: 40px;
+            position: relative;
 
             .duo {
                 // border: 1px solid blue;
@@ -97,6 +103,13 @@
                     padding: 20px;
                 }
             }
+
+            &::after {
+                content: url("../../Public/Images/dots.svg");
+                position: absolute;
+                right: -20%;
+                bottom: -40%;
+            }
         }
 
         &__title::before {
@@ -105,6 +118,19 @@
             width: 50px;
             left: -20%;
             top: 50%;
+        }
+
+        .points1::before {
+            content: url("../../Public/Images/dots.svg");
+            position: absolute;
+            right: 0;
+        }
+
+        .points1::after {
+            content: url("../../Public/Images/dots.svg");
+            position: absolute;
+            left: 0;
+            bottom: -50%;
         }
     }
 }

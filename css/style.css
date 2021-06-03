@@ -476,6 +476,7 @@ body {
   max-width: 600px;
   object-fit: cover;
   margin-bottom: 50px;
+  position: relative;
 }
 .bonus__title {
   display: flex;
@@ -491,6 +492,9 @@ body {
   font-weight: 800;
   line-height: 1.5;
   margin-top: 10px;
+}
+.bonus__title__points {
+  position: relative;
 }
 .bonus__title-top, .bonus__title-bottom {
   font-size: 1.25rem;
@@ -539,6 +543,7 @@ body {
   .bonus--button {
     width: 60%;
     margin-bottom: 40px;
+    position: relative;
   }
   .bonus--button .duo {
     width: 50%;
@@ -547,12 +552,29 @@ body {
   .bonus--button .duo .single {
     padding: 20px;
   }
+  .bonus--button::after {
+    content: url("../../Public/Images/dots.svg");
+    position: absolute;
+    right: -20%;
+    bottom: -40%;
+  }
   .bonus__title::before {
     content: url("../../Public/Images/curly arrow.svg");
     position: absolute;
     width: 50px;
     left: -20%;
     top: 50%;
+  }
+  .bonus .points1::before {
+    content: url("../../Public/Images/dots.svg");
+    position: absolute;
+    right: 0;
+  }
+  .bonus .points1::after {
+    content: url("../../Public/Images/dots.svg");
+    position: absolute;
+    left: 0;
+    bottom: -50%;
   }
 }
 .footer {
