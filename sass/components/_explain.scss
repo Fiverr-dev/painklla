@@ -12,3 +12,21 @@
         margin-bottom: 20px;
     }
 }
+
+@media (min-width: 1020px) {
+    .explain {
+        flex-direction: row;
+        align-items: flex-start;
+
+        &__title {
+            flex: 1;
+            text-align: left;
+            margin-right: 30px;
+        }
+
+        &__text {
+            flex: 2;
+            text-align: left;
+        }
+    }
+}
