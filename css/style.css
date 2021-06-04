@@ -156,7 +156,7 @@ body {
 .hero {
   padding-top: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   overflow: hidden;
 }
@@ -201,8 +201,16 @@ body {
   text-align: center;
   line-height: 2;
 }
+@media (max-width: 1020px) {
+  .hero__text {
+    font-size: 1.25rem;
+  }
+}
 
 @media (min-width: 1020px) {
+  .hero {
+    flex-direction: column;
+  }
   .hero__image {
     margin-top: -165px;
     max-width: 800px;
