@@ -28,6 +28,11 @@ body {
     font-size: 1.25rem;
   }
 }
+@media (min-width: 1020px) {
+  .paragraph {
+    font-size: 1.25rem;
+  }
+}
 
 h2 {
   font-size: 2rem;
@@ -482,6 +487,19 @@ h2 {
   color: #444444;
   line-height: 1.5;
 }
+@media (min-width: 1020px) {
+  .faq__text {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2;
+    text-align: left;
+  }
+}
+@media (min-width: 1020px) and (min-width: 1020px) {
+  .faq__text {
+    font-size: 1.25rem;
+  }
+}
 .faq__bg-dots {
   display: none;
   position: absolute;
@@ -685,6 +703,11 @@ h2 {
   text-align: center;
   line-height: 2;
   text-align: left;
+}
+@media (min-width: 1020px) {
+  .point {
+    font-size: 1.25rem;
+  }
 }
 .point .no {
   width: 32px;

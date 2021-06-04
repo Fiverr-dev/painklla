@@ -16,6 +16,11 @@
         font-size: 1rem;
         color: palette.$black;
         line-height: 1.5;
+
+        @include mixins.pc {
+            @include mixins.para;
+            text-align: left;
+        }
     }
 
     &__bg-dots {
