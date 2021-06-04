@@ -4,7 +4,8 @@
 .pain {
     @include mixins.gap;
     background: palette.$linear;
-    padding-top: 40px;
+    padding-top: 20px;
+    margin-top: 10px;
 
     &__content {
         display: flex;

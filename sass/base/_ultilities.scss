@@ -20,6 +20,8 @@ h2 {
 }
 
 .single:hover {
-    background-color: palette.$accent;
-    color: white !important;
+    @include mixins.pc {
+        background-color: palette.$accent;
+        color: white !important;
+    }
 }

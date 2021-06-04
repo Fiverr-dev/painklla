@@ -38,9 +38,11 @@ h2 {
   font-size: 2rem;
 }
 
-.single:hover {
-  background-color: #53a0ff;
-  color: white !important;
+@media (min-width: 1020px) {
+  .single:hover {
+    background-color: #53a0ff;
+    color: white !important;
+  }
 }
 
 .bg-overlay {
@@ -244,14 +246,14 @@ h2 {
 }
 @media (min-width: 1020px) {
   .what {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1020px) {
   .what {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .what__title {
@@ -290,14 +292,14 @@ h2 {
 }
 @media (min-width: 1020px) {
   .explain {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1020px) {
   .explain {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .explain__title {
@@ -322,18 +324,19 @@ h2 {
 }
 .pain {
   background: linear-gradient(250.86deg, #f8fcff -4.57%, rgba(221, 236, 255, 0.2) 102.79%);
-  padding-top: 40px;
+  padding-top: 20px;
+  margin-top: 10px;
 }
 @media (min-width: 1020px) {
   .pain {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1020px) {
   .pain {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .pain__content {
@@ -531,14 +534,14 @@ h2 {
 }
 @media (min-width: 1020px) {
   .banner {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1020px) {
   .banner {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .banner__image {
@@ -593,18 +596,17 @@ h2 {
   flex-direction: column;
   align-items: center;
   border-bottom: 10px solid #53a0ff;
-  padding-bottom: 40px;
 }
 @media (min-width: 1020px) {
   .how {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1020px) {
   .how {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .how__block {
@@ -666,21 +668,21 @@ h2 {
 }
 @media (min-width: 1020px) {
   .bonus {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 1020px) {
   .bonus {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .bonus__image {
   width: 110%;
   max-width: 700px;
   object-fit: cover;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   position: relative;
 }
 .bonus__title {
@@ -839,7 +841,7 @@ h2 {
   align-items: center;
   cursor: pointer;
   padding: 5px 50px;
-  max-width: 170px;
+  max-width: 150px;
 }
 .footer__right .download img {
   width: max(80%, 100px);
