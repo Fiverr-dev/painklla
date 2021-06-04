@@ -224,8 +224,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-top: 60px;
-  margin-bottom: 60px;
+}
+@media (min-width: 1020px) {
+  .what {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1020px) {
+  .what {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 .what__title {
   font-size: 1.5rem;
@@ -236,13 +246,28 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.what__left {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
 
 .explain {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+}
+@media (min-width: 1020px) {
+  .explain {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1020px) {
+  .explain {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 .explain__title {
   text-align: center;
@@ -250,10 +275,20 @@ body {
 }
 
 .pain {
-  margin-top: 60px;
-  margin-bottom: 60px;
   background: linear-gradient(250.86deg, #f8fcff -4.57%, rgba(221, 236, 255, 0.2) 102.79%);
   padding-top: 40px;
+}
+@media (min-width: 1020px) {
+  .pain {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1020px) {
+  .pain {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 .pain__content {
   display: flex;
@@ -430,12 +465,22 @@ body {
   }
 }
 .banner {
-  margin-top: 60px;
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+@media (min-width: 1020px) {
+  .banner {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1020px) {
+  .banner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 .banner__image {
   width: 100%;
@@ -484,13 +529,23 @@ body {
 }
 
 .how {
-  margin-top: 60px;
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: 10px solid #53a0ff;
   padding-bottom: 40px;
+}
+@media (min-width: 1020px) {
+  .how {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1020px) {
+  .how {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 .how__block {
   margin-bottom: 60px;
@@ -537,11 +592,21 @@ body {
   }
 }
 .bonus {
-  margin-top: 60px;
-  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 1020px) {
+  .bonus {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1020px) {
+  .bonus {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 .bonus__image {
   width: 100%;
