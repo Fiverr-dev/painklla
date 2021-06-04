@@ -190,6 +190,7 @@ h2 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
+  color: red;
 }
 @media (min-width: 1020px) {
   .hero__title {
