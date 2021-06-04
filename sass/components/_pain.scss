@@ -4,7 +4,15 @@
 .pain {
     @include mixins.gap;
     background: palette.$linear;
-    padding-top: 20px;
+
+    @include mixins.pc {
+        padding-top: 20px;
+    }
+
+    @include mixins.phone {
+        padding-top: 10px;
+    }
+
     margin-top: 10px;
 
     &__content {
@@ -15,7 +23,11 @@
 
     &__title {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+
+        @include mixins.pc {
+            margin-bottom: 40px;
+        }
     }
 
     &__types {
@@ -24,7 +36,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+
+        @include mixins.pc {
+            margin-bottom: 40px;
+        }
     }
 
     &__box {
@@ -43,7 +59,10 @@
     }
 
     &__buttons {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        @include mixins.pc {
+            margin-bottom: 50px;
+        }
         .grouped {
             display: flex;
             flex-direction: column;

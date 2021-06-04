@@ -173,15 +173,14 @@ h2 {
 }
 
 .hero {
-  padding-top: 50px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   overflow: hidden;
 }
-@media (max-width: 1020px) {
+@media (min-width: 1020px) {
   .hero {
-    padding-top: 10px;
+    padding-top: 50px;
   }
 }
 .hero__content {
@@ -252,8 +251,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .what {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .what__title {
@@ -298,8 +297,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .explain {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .explain__title {
@@ -324,7 +323,6 @@ h2 {
 }
 .pain {
   background: linear-gradient(250.86deg, #f8fcff -4.57%, rgba(221, 236, 255, 0.2) 102.79%);
-  padding-top: 20px;
   margin-top: 10px;
 }
 @media (min-width: 1020px) {
@@ -335,8 +333,18 @@ h2 {
 }
 @media (max-width: 1020px) {
   .pain {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1020px) {
+  .pain {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1020px) {
+  .pain {
+    padding-top: 10px;
   }
 }
 .pain__content {
@@ -346,7 +354,12 @@ h2 {
 }
 .pain__title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1020px) {
+  .pain__title {
+    margin-bottom: 40px;
+  }
 }
 .pain__types {
   display: flex;
@@ -354,7 +367,12 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1020px) {
+  .pain__types {
+    margin-bottom: 40px;
+  }
 }
 .pain__box {
   background-color: #eef5ff;
@@ -370,7 +388,12 @@ h2 {
   font-size: 1rem;
 }
 .pain__buttons {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1020px) {
+  .pain__buttons {
+    margin-bottom: 50px;
+  }
 }
 .pain__buttons .grouped {
   display: flex;
@@ -540,8 +563,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .banner {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .banner__image {
@@ -555,6 +578,7 @@ h2 {
   font-weight: 800;
   color: #53a0ff;
   margin-bottom: 30px;
+  text-align: center;
 }
 .banner__title::before {
   content: url("../Public/Images/life-up.svg");
@@ -605,12 +629,17 @@ h2 {
 }
 @media (max-width: 1020px) {
   .how {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .how__block {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1020px) {
+  .how__block {
+    margin-bottom: 60px;
+  }
 }
 .how__image1 {
   display: none;
@@ -674,24 +703,33 @@ h2 {
 }
 @media (max-width: 1020px) {
   .bonus {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 .bonus__image {
   width: 110%;
   max-width: 700px;
   object-fit: cover;
-  margin-bottom: 20px;
   position: relative;
+}
+@media (min-width: 1020px) {
+  .bonus__image {
+    margin-bottom: 20px;
+  }
 }
 .bonus__title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   position: relative;
   max-width: 400px;
+}
+@media (min-width: 1020px) {
+  .bonus__title {
+    margin-bottom: 50px;
+  }
 }
 .bonus__title-main {
   text-align: center;
@@ -707,6 +745,7 @@ h2 {
   font-size: 1.25rem;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 .bonus__title-top img, .bonus__title-bottom img {
   margin-left: 10px;

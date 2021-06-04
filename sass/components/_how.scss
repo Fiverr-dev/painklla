@@ -25,7 +25,11 @@
     border-bottom: 10px solid palette.$accent;
 
     &__block {
-        margin-bottom: 60px;
+        margin-bottom: 30px;
+
+        @include mixins.pc {
+            margin-bottom: 60px;
+        }
     }
 
     &__image1 {

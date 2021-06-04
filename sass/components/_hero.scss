@@ -2,16 +2,15 @@
 @use "../base/mixins";
 
 .hero {
-    padding-top: 50px;
+    @include mixins.pc {
+        padding-top: 50px;
+    }
+
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     // position: relative;
     overflow: hidden;
-
-    @include mixins.phone {
-        padding-top: 10px;
-    }
 
     &__content {
         z-index: 5;
