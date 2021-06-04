@@ -166,6 +166,9 @@ h2 {
   align-items: center;
   border-radius: 10px;
 }
+.menu-open .navlinks__item {
+  color: #53a0ff !important;
+}
 
 .hero {
   padding-top: 50px;
@@ -582,6 +585,7 @@ h2 {
   margin-right: auto;
   margin-left: auto;
   width: fit-content;
+  text-align: center;
 }
 
 .how {

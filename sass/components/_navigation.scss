@@ -126,7 +126,12 @@
     right: 10px;
     border: none;
     background-color: #fff;
+
     padding: 50px 20px;
     align-items: center;
     border-radius: 10px;
+
+    .navlinks__item {
+        color: palette.$accent !important;
+    }
 }
