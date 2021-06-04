@@ -8,9 +8,7 @@
 }
 
 .paragraph {
-    font-size: 1rem;
-    text-align: center;
-    line-height: 2;
+    @include mixins.para;
     @include mixins.pc {
         font-size: 1.25rem;
     }
