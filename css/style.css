@@ -21,7 +21,7 @@ body {
 .paragraph {
   font-size: 1rem;
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
 }
 @media (min-width: 1020px) {
   .paragraph {
@@ -491,7 +491,7 @@ h2 {
   .faq__text {
     font-size: 1rem;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
     text-align: left;
   }
 }
@@ -613,8 +613,16 @@ h2 {
   height: 63px;
 }
 .how__text {
-  line-height: 1.5;
   font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  line-height: 1.5;
+  text-align: left;
+}
+@media (min-width: 1020px) {
+  .how__text {
+    font-size: 1.25rem;
+  }
 }
 
 .block__title {
@@ -701,7 +709,7 @@ h2 {
   margin-bottom: 20px;
   font-size: 1rem;
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
   text-align: left;
 }
 @media (min-width: 1020px) {
