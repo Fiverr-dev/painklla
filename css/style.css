@@ -821,12 +821,6 @@ h2 {
     position: absolute;
     right: 0;
   }
-  .bonus .points1::after {
-    content: url("../Public/Images/dots.svg");
-    position: absolute;
-    left: 0;
-    bottom: -50%;
-  }
 }
 .footer {
   background-color: #0e0e0f;
