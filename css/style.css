@@ -35,7 +35,7 @@ body {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 @media (min-width: 1020px) {
@@ -190,7 +190,6 @@ h2 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: red;
 }
 @media (min-width: 1020px) {
   .hero__title {
@@ -252,8 +251,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .what {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .what__title {
@@ -298,8 +297,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .explain {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .explain__title {
@@ -334,8 +333,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .pain {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1020px) {
@@ -564,8 +563,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .banner {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .banner__image {
@@ -630,8 +629,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .how {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .how__block {
@@ -704,8 +703,8 @@ h2 {
 }
 @media (max-width: 1020px) {
   .bonus {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 .bonus__image {
