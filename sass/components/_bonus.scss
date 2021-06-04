@@ -105,7 +105,7 @@
             }
 
             &::after {
-                content: url("../../Public/Images/dots.svg");
+                content: url("../Public/Images/dots.svg");
                 position: absolute;
                 right: -20%;
                 bottom: -40%;
@@ -113,7 +113,7 @@
         }
 
         &__title::before {
-            content: url("../../Public/Images/curly arrow.svg");
+            content: url("../Public/Images/curly arrow.svg");
             position: absolute;
             width: 50px;
             left: -20%;
@@ -121,13 +121,13 @@
         }
 
         .points1::before {
-            content: url("../../Public/Images/dots.svg");
+            content: url("../Public/Images/dots.svg");
             position: absolute;
             right: 0;
         }
 
         .points1::after {
-            content: url("../../Public/Images/dots.svg");
+            content: url("../Public/Images/dots.svg");
             position: absolute;
             left: 0;
             bottom: -50%;
