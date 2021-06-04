@@ -25,3 +25,22 @@
         align-items: center;
     }
 }
+
+@media (min-width: 1020px) {
+    .what {
+        flex-direction: row;
+
+        &__icon {
+            margin-left: 30px;
+        }
+
+        &__left {
+            flex-direction: row;
+            margin-right: 30px;
+        }
+
+        &__text {
+            text-align: left;
+        }
+    }
+}
