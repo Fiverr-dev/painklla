@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include mixins.phone {
+        align-items: flex-start;
+    }
 
     &__image {
         width: 110%;
@@ -21,13 +24,16 @@
     &__title {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        @include mixins.phone {
+            align-items: flex-start;
+        }
         margin-bottom: 30px;
         position: relative;
-        max-width: 400px;
 
         @include mixins.pc {
             margin-bottom: 50px;
+            max-width: 500px;
         }
 
         &-main {

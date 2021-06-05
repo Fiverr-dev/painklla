@@ -27,6 +27,12 @@
     }
 }
 
+@mixin phone-small {
+    @media (max-width: 370px) {
+        @content;
+    }
+}
+
 @mixin pc {
     @media (min-width: 1020px) {
         @content;

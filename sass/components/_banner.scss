@@ -10,16 +10,19 @@
 
     &__image {
         width: 110%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         max-width: 700px;
     }
 
     &__title {
         position: relative;
         font-size: 2rem;
+        @include mixins.phone-small {
+            font-size: 1.5rem;
+        }
         font-weight: 800;
         color: palette.$accent;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         text-align: center;
     }
 

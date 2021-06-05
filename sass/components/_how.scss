@@ -12,6 +12,10 @@
         margin-left: auto;
         width: fit-content;
         text-align: center;
+
+        @include mixins.phone {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -38,6 +42,8 @@
 
     &__image2 {
         width: 90vw;
+        max-width: 500px;
+        margin-bottom: 20px;
     }
 
     &__icon {
