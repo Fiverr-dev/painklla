@@ -925,7 +925,7 @@ h2 {
   align-items: center;
   cursor: pointer;
   padding: 5px 50px;
-  max-width: 150px;
+  max-width: 130px;
 }
 .footer__right .download img {
   width: max(80%, 100px);
