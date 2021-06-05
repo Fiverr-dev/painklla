@@ -11,6 +11,13 @@ body {
   color: #444444;
 }
 
+h1,
+h2,
+h3,
+p {
+  text-align: left !important;
+}
+
 .container {
   max-width: 1280px;
   margin-left: auto;
@@ -240,7 +247,7 @@ h2 {
 .what {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 @media (min-width: 1020px) {
@@ -721,7 +728,7 @@ h2 {
 .bonus__title {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 30px;
   position: relative;
   max-width: 400px;

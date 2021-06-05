@@ -12,3 +12,10 @@ body {
     font-family: palette.$font;
     color: palette.$black;
 }
+
+h1,
+h2,
+h3,
+p {
+    text-align: left !important;
+}
