@@ -925,6 +925,12 @@ h2 {
 .footer__right .download img {
   width: max(80%, 100px);
 }
+@media (max-width: 1020px) {
+  .footer__right .download img {
+    width: 120px;
+    padding: 5px;
+  }
+}
 .footer__right .download + .download {
   margin-left: 20px;
 }
