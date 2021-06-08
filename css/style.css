@@ -330,6 +330,13 @@ h2 {
   margin-bottom: 20px;
 }
 
+.video-section video {
+  width: 90%;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
 @media (min-width: 1020px) {
   .explain {
     flex-direction: row;
@@ -341,8 +348,15 @@ h2 {
     margin-right: 30px;
   }
   .explain__text {
-    flex: 2;
     text-align: left;
+  }
+  .explain .video-section {
+    flex: 2;
+  }
+  .explain video {
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 10px;
   }
 }
 .pain {

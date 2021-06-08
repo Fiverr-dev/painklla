@@ -16,6 +16,15 @@
     }
 }
 
+.video-section {
+    video {
+        width: 90%;
+        border-radius: 10px;
+        display: block;
+        margin: 20px auto;
+    }
+}
+
 @media (min-width: 1020px) {
     .explain {
         flex-direction: row;
@@ -28,8 +37,17 @@
         }
 
         &__text {
-            flex: 2;
             text-align: left;
+        }
+
+        .video-section {
+            flex: 2;
+        }
+
+        video {
+            width: 80%;
+            margin: 20px 0;
+            border-radius: 10px;
         }
     }
 }
